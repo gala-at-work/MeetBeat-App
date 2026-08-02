@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@import 'tailwindcss';
+@import 'uniwind';
+
+@import 'heroui-native/styles';
+
+/*
+ * MeetBeat theme.
+ *
+ * Near-black canvas, graphite surfaces, electric blue accent — the Spotify
+ * shell with the logo's blue standing in for green. HeroUI semantic tokens are
+ * overridden inside Uniwind theme variants so both web and native pick the
+ * brand up (a plain :root block would leave Expo Go on HeroUI's default
+ * palette). Both variants carry the same values because the app is dark-only:
+ * anything that resolves `light` still renders on the dark canvas.
+ *
+ * `--font-*` are the HeroUI font slots; the names must match the PostScript
+ * names registered by `useFonts` in app/_layout.tsx.
+ */
+
+@layer theme {
+  :root {
+    @variant light {
+      --font-normal: 'PlusJakartaSans_400Regular';
+      --font-medium: 'PlusJakartaSans_500Medium';
+      --font-semibold: 'PlusJakartaSans_600SemiBold';
+      --font-bold: 'PlusJakartaSans_700Bold';
+
+      --accent: oklch(0.615 0.2 261);
+      --accent-foreground: oklch(1 0 0);
+      --accent-soft: oklch(0.3 0.1 262);
+      --accent-soft-foreground: oklch(0.86 0.08 258);
+      --focus: var(--accent);
+      --background: oklch(0.13 0.014 285);
+      --panel: oklch(0.205 0.013 283);
+      --surface: oklch(0.245 0.014 281);
+      --surface-foreground: oklch(0.96 0.006 275);
+      --default: oklch(0.29 0.014 281);
+      --default-foreground: oklch(0.93 0.008 275);
+      --foreground: oklch(0.965 0.006 275);
+      --muted: oklch(0.71 0.022 268);
+      --muted-foreground: oklch(0.71 0.022 268);
+      --border: oklch(0.3 0.015 281);
+      --link: var(--accent);
+      --radius: 0.875rem;
+    }
+
+    @variant dark {
+      --font-normal: 'PlusJakartaSans_400Regular';
+      --font-medium: 'PlusJakartaSans_500Medium';
+      --font-semibold: 'PlusJakartaSans_600SemiBold';
+      --font-bold: 'PlusJakartaSans_700Bold';
+
+      --accent: oklch(0.615 0.2 261);
+      --accent-foreground: oklch(1 0 0);
+      --accent-soft: oklch(0.3 0.1 262);
+      --accent-soft-foreground: oklch(0.86 0.08 258);
+      --focus: var(--accent);
+      --background: oklch(0.13 0.014 285);
+      --panel: oklch(0.205 0.013 283);
+      --surface: oklch(0.245 0.014 281);
+      --surface-foreground: oklch(0.96 0.006 275);
+      --default: oklch(0.29 0.014 281);
+      --default-foreground: oklch(0.93 0.008 275);
+      --foreground: oklch(0.965 0.006 275);
+      --muted: oklch(0.71 0.022 268);
+      --muted-foreground: oklch(0.71 0.022 268);
+      --border: oklch(0.3 0.015 281);
+      --link: var(--accent);
+      --radius: 0.875rem;
+    }
+  }
+}
+
+/*
+ * Custom utilities. Kept as hex so the exact same values can be handed to
+ * native props (SVG strokes, icon colours, navigation chrome) from lib/theme.ts.
+ */
+@theme {
+  --font-sans: 'PlusJakartaSans_400Regular', 'Plus Jakarta Sans', system-ui, sans-serif;
+  --default-font-family: var(--font-sans);
+
+  --color-navy: #0d2149;
+  --color-electric: #2f80ff;
+  --color-canvas: #07080d;
+  --color-elevated: #14171e;
+  --color-hairline: #252a34;
+  --color-tier-strong: #4d9bff;
+  --color-tier-good: #26b6e6;
+  --color-tier-fair: #8b95a8;
+  --color-tier-strong-soft: #0f2551;
+  --color-tier-good-soft: #0c2a38;
+  --color-tier-fair-soft: #1b1f28;
+  --color-hero-ink: #ffffff;
+  --color-hero-ink-muted: #c9dcff;
+  --color-signal: #f0a93a;
+  --color-positive: #2fd39b;
+  --color-ink: #f2f5fa;
+}
+
+@source './node_modules/heroui-native/lib';
