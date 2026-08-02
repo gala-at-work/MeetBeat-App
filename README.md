@@ -1,6 +1,8 @@
 # Meet-Beat-App
 Project Meet-Beat, lets you make most out of networking events
 
+*This App was built using a vibe-coding App
+
 Please have a look at the App Demo here : https://drive.google.com/drive/u/2/folders/1owv-NyGdF-VXiySUJci9gKwQmZ6PS9Br
 or here on my LinkedIn:
 
