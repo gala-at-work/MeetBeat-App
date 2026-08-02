@@ -6,7 +6,8 @@ import { RefreshControl, ScrollView, View } from 'react-native';
 
 import { SafeAreaView } from '@/components/ui/primitives/SafeAreaView';
 import { Reveal } from '@/components/Reveal';
-import { cohortForEvent } from '@/lib/attendees';
+import { cohortForEvent, CURRENT_EVENT } from '@/lib/attendees';
+import { hasBiltConfig } from '@/lib/bilt';
 import { fetchEvents, findEventByCode } from '@/lib/cloud';
 import { useT } from '@/lib/i18n';
 import { useEventStore } from '@/lib/store';
@@ -28,6 +29,12 @@ export default function EventsScreen() {
   const [error, setError] = useState<string | null>(null);
 
   const refresh = useCallback(() => {
+    if (!hasBiltConfig) {
+      setEvents([CURRENT_EVENT]);
+      setRefreshing(false);
+      return;
+    }
+
     setRefreshing(true);
     void fetchEvents()
       .then(setEvents)
@@ -41,7 +48,13 @@ export default function EventsScreen() {
     setJoining(true);
     setError(null);
 
-    void findEventByCode(trimmed)
+    const lookup = hasBiltConfig
+      ? findEventByCode(trimmed)
+      : Promise.resolve(
+          trimmed.toUpperCase() === CURRENT_EVENT.joinCode.toUpperCase() ? CURRENT_EVENT : null,
+        );
+
+    void lookup
       .then((event) => {
         if (!event) {
           setError(t('events.notFound'));
