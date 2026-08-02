@@ -2,9 +2,8 @@
 Project Meet-Beat, lets you make most out of networking events
 
 Please have a look at the App Demo here : https://drive.google.com/drive/u/2/folders/1owv-NyGdF-VXiySUJci9gKwQmZ6PS9Br
-or here on my LinkedIn:
 
-Meet-Beat is a mobile-first networking prototype that helps event attendees identify the most relevant people in the room. It turns each user’s goals, skills, interests, and offers into a “Networking DNA,” then ranks attendees using explainable, goal-based matching. The product includes event-specific onboarding, a visual match radar, detailed match reasoning, personalised conversation starters, messaging, and connection tracking—demonstrating end-to-end product thinking from user problem and prioritisation to interaction design and prototype execution.
+Meet-Beat is a mobile-first networking app that helps event attendees identify the most relevant people in the room. It turns each user’s goals, skills, interests, and offers into a “Networking DNA,” then ranks attendees using explainable, goal-based matching. The product includes event-specific onboarding, a visual match radar, detailed match reasoning, personalised conversation starters, messaging, and connection tracking—demonstrating end-to-end product thinking from user problem and prioritisation to interaction design and prototype execution.
 
 ### What I did
 
