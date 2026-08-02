@@ -1,8 +1,6 @@
 # Meet-Beat-App
 Project Meet-Beat, lets you make most out of networking events
 
-*This App was built using a vibe-coding App
-
 Please have a look at the App Demo here : https://drive.google.com/drive/u/2/folders/1owv-NyGdF-VXiySUJci9gKwQmZ6PS9Br
 or here on my LinkedIn:
 
@@ -26,6 +24,8 @@ Meet-Beat is a mobile-first networking prototype that helps event attendees iden
 * Considered edge cases such as missing data, unsupported voice input, incomplete onboarding and local demo mode.
 * Prioritised features around the main user outcome rather than adding unnecessary functionality.
 * Created the full product specification and iterated on the prototype based on usability and product clarity.
+
+*This App was built using a vibe-coding App
 
 ### How AI was used
 
