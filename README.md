@@ -1,7 +1,9 @@
 # Meet-Beat-App
 Project Meet-Beat, lets you make most out of networking events
 
-Please have a look at the App Demo here : https://drive.google.com/drive/u/2/folders/1owv-NyGdF-VXiySUJci9gKwQmZ6PS9Br
+<img width="1114" height="627" alt="image" src="https://github.com/user-attachments/assets/4717fc47-407e-4575-a1fb-79a2f4aaa67b" />
+
+Please have a look at the Full App Demo here : https://drive.google.com/drive/u/2/folders/1owv-NyGdF-VXiySUJci9gKwQmZ6PS9Br
 
 The App: 
 The core user problem: networking events create many introductions, but finding relevant connections is mostly guesswork, the app attempts to optimise it.
@@ -23,7 +25,7 @@ The core user problem: networking events create many introductions, but finding 
 * Prioritised features around the main user outcome rather than adding unnecessary functionality.
 * Created the product specification and iterated on the prototype based on usability and product clarity.
 
-*This App was built using a vibe-coding App
+*This App was built using a vibe-coding App 
 
 ### How AI was used
 * Implemented the prototype based on an approximately 60-page prompt.
